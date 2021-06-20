@@ -1,0 +1,42 @@
+﻿<Window x:Class="ExamWpfQuestionnaireSurvey.Forms.Result.ResultForms"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamWpfQuestionnaireSurvey.Forms.Result"
+        mc:Ignorable="d"
+        Title="ResultForms" Height="450" Width="800">
+    <Window.Resources>
+        <Style x:Key="labelStyle" TargetType="Label" >
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="ФИО :" Grid.Row="0" Grid.Column="0" Style="{StaticResource labelStyle}" />
+        <Label Content="Количество вопросов :" Grid.Row="1" Grid.Column="0" Style="{StaticResource labelStyle}" />
+        <Label Content="Количество правилтных ответов :" Grid.Row="2" Grid.Column="0" Style="{StaticResource labelStyle}" />
+        <Label Content="Процент :" Grid.Row="3" Grid.Column="0" Style="{StaticResource labelStyle}" />
+        <Label Grid.Row="0" Grid.Column="0" Style="{StaticResource labelStyle}" />
+        <Label Grid.Row="1" Grid.Column="0" Style="{StaticResource labelStyle}" />
+        <Label Grid.Row="2" Grid.Column="0" Style="{StaticResource labelStyle}" />
+        <Label Grid.Row="3" Grid.Column="0" Style="{StaticResource labelStyle}" />
+        <Label x:Name="lb_1" Grid.Row="0" Grid.Column="1" Style="{StaticResource labelStyle}"/>
+        <Label x:Name="lb_2" Grid.Row="1" Grid.Column="1" Style="{StaticResource labelStyle}"/>
+        <Label x:Name="lb_3" Grid.Row="2" Grid.Column="1" Style="{StaticResource labelStyle}"/>
+        <Label x:Name="lb_4" Grid.Row="3" Grid.Column="1" Style="{StaticResource labelStyle}"/>
+
+    </Grid>
+</Window>
